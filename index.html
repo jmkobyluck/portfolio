@@ -10,11 +10,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" 
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>    
     <link href='style.css' rel='stylesheet' type='text/css'>
-    <script src="js/text-remove.js"></script>
+    <script src='js/nav-windows.js'></script>
 </head>
 <body>
-    <script src='js/nav-windows.js'></script>
     <div id="main" class="home">
         <h1 class="name">Johnny Kobyluck</h1>
         <ul class="desc">
@@ -63,10 +65,10 @@
     <div id="right" class="contact-right">
         <h2 id="form-title">Professional Inquiries</h2>
         <form action="#">
-            <input type="text" id="form-email" name="email" value="Email"><br>
-            <input type="text" id="form-name" name="name" value="Name"><br>
-            <input type="text" id="form-subject" name="subject" value="Subject"><br>
-            <input type="text" id="form-message" name="message" value="Message"><br>
+            <input type="text" id="form-email" name="email" placeholder="Email"><br>
+            <input type="text" id="form-name" name="name" placeholder="Name"><br>
+            <input type="text" id="form-subject" name="subject" placeholder="Subject"><br>
+            <textarea type="text" id="form-message" name="message" placeholder="Message" cols="22" rows="4"></textarea><br>
             <input type="submit" id="form-submit" value="Submit">
         </form>
     </div>

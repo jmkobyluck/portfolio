@@ -47,6 +47,7 @@ body {
     color: #58CAF0;
     width: 20em;
     margin-right: 0;
+    text-shadow: rgba(0,0,0,0.5);
 }
 
 .home ul {
@@ -95,6 +96,22 @@ body {
     border-bottom-right-radius: 36px;
 }
 
+.about-left h2 {
+    color: #58CAF0;
+    margin-top: 150px;
+    margin-left: 100px;
+    font-size: xx-large;
+}
+
+.about-left p {
+    color: #58CAF0;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: larger;
+    text-shadow: rgba(0,0,0,0.5);
+}
+
 .projects-bottom {
     background-color: #6E6E6E;
     opacity: 60%;
@@ -121,10 +138,7 @@ body {
 }
 
 .projects li {
-    border-style: solid;
-    border-radius: 10px;
     float: left;
-    margin: 40px 30px ;
 }
 
 .projects li a {
@@ -136,9 +150,11 @@ body {
     font-weight: bold;
     color: #58CAF0;
     font-size: x-large;
-    top: 50%;
-    transform: translate(0%, 30%);
-    position: relative;
+}
+
+.projects img {
+    width: 150px;
+    margin-top: 50px;
 }
 
 .contact-right {

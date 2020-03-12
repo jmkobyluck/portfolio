@@ -72,13 +72,13 @@ body {
 
 .photo-container {
     display: block;
-    width: 15em;
+    width: 18em;
     float: right;
     background-color: rgba(0,0,0,0.2);
     border-style: hidden;
     border-radius: 10px;
     position: relative;
-    margin-right: 15%;
+    margin-right: 20%;
 }
 
 .about-left {
@@ -110,6 +110,7 @@ body {
     margin-right: 100px;
     font-size: larger;
     text-shadow: rgba(0,0,0,0.5);
+    font-weight: bold;
 }
 
 .projects-bottom {

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Johnny Kobyluck Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+        crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" 
+        crossorigin="anonymous"></script>
+    <link href='style.css' rel='stylesheet' type='text/css'>
+    <script src="js/text-remove.js"></script>
+</head>
+<body>
+    <script src='js/nav-windows.js'></script>
+    <div id="main" class="home">
+        <h1 class="name">Johnny Kobyluck</h1>
+        <ul class="desc">
+            <li>Web Developer</li>
+            <li>Husband</li>
+            <li>Father</li>
+            <li>Son</li>
+            <li>Friend</li>
+        </ul>
+        <div class="photo-container">
+            <img width="100%" height="100%" class="profile" src="assets/me.jpg" alt="Profile Photo of Johnny" class="img-rounded">
+        </div>
+    </div>    
+
+
+    <div class="buttons">
+        <button role='button' onclick="OnShowPart(event, 'left')" class='button' id='nav-left'>About</button>
+        <button role='button' onclick="OnShowPart(event, 'bottom')" class='button' id='nav-bottom'>Projects</button>
+        <button role='button' onclick="OnShowPart(event, 'right')" class='button' id='nav-right'>Contact</button>
+    </div>
+    <div id="left" class="about-left">
+        <p class="bio"></p>
+    </div>
+    <div id="bottom" class="projects-bottom">
+        <h2>Previous Projects</h2>
+        <ul class="projects">
+            <li>
+                <a href="https://jmkobyluck.github.io/bioSite/" target="_blank">bioSite</a>
+            </li>
+            <li>
+                <a href="https://github.com/jmkobyluck/web-231" target="_blank">Web-231 Repo</a>
+            </li>
+            <li>
+                <a href="https://github.com/jmkobyluck/web-330" target="_blank">Web-330 Repo</a>
+            </li>
+        </ul>
+    </div>
+    <div id="right" class="contact-right">
+        <h2 id="form-title">Professional Inquiries</h2>
+        <form action="#">
+            <input type="text" id="form-email" name="email" value="Email"><br>
+            <input type="text" id="form-name" name="name" value="Name"><br>
+            <input type="text" id="form-subject" name="subject" value="Subject"><br>
+            <input type="text" id="form-message" name="message" value="Message"><br>
+            <input type="submit" id="form-submit" value="Submit">
+        </form>
+    </div>
+    
+</body>
+</html>

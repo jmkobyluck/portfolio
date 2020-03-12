@@ -184,7 +184,8 @@ body {
     margin-top: 20px;
 }
 .contact-right form input {
-    margin: 10px 0px
+    margin: 10px 0px;
+    width: 75%;
 }
 
 .buttons {

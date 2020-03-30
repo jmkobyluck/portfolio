@@ -8,188 +8,271 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-
 }
 
 body {
     position: relative;
-    overflow: hidden;
+    overflow: auto;
+    min-height: 750px;
+
 }
+
+
+/* ------MOBILE VIEW------ */
 
 .main {
     height: 100%;
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 2%;
+    transition-duration: 500ms;
     background-image: url(assets/web-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
-    transition-duration: 500ms;
+    overflow: auto;
 }
 
+/* home content */
 .home {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background-image: url(assets/web-bg.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition-duration: 500ms;
-    padding-top: 10%;
-    padding-left: 15%;
+    padding-top: 20%;;
     display: block;
+    margin: auto;
+    width: 75%;
 }
 
+/* name heading */
 .name {
     color: #58CAF0;
-    width: 20em;
-    margin-right: 0;
     text-shadow: rgba(0,0,0,0.5);
+    text-align: center;
 }
 
-.home ul {
-    background-color: rgba(110,110,110,0.8);
-    /* opacity: 41%; */
-    width: 20em;
+/* profile photo container */
+.photo-container {
+    display: block;
+    background-color: rgba(0,0,0,0.2);
     border-style: hidden;
     border-radius: 10px;
-    position: fixed;
-    text-align: center;
-    padding: 0;
-    margin-top: 4em;
-    font-size: x-large;
+    position: relative;
+    margin: 20% auto;
 }
 
-.home ul li {
+/* profile description */
+.desc {
+    display: block;
+    margin: auto;
+    width: 100%;
+    background-color: rgba(110,110,110,0.8);
+    border-style: hidden;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    padding: 0;
+    font-size: 20px;
+}
+
+.desc li {
     list-style: none;
     color: #58CAF0;
     font-weight: bold;
     margin: 10px;
 }
 
-.photo-container {
+.buttons {
+    position: absolute;
+    float: initial;
+    padding: 0;
+    margin: auto;
+    transform: translateX(-120px);
+    left: 50%;
     display: block;
-    width: 18em;
-    float: right;
-    background-color: rgba(0,0,0,0.2);
-    border-style: hidden;
-    border-radius: 10px;
-    position: relative;
-    margin-right: 20%;
+    width: 240px;
+    margin-top: 5%;
 }
 
+.button {
+    margin: 2%;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-style: none;
+    border-radius: 10px;
+    color: #58CAF0;
+    font-weight: bold;
+    padding: 10px 5px
+}
+
+
+/* -----ABOUT SECTION----- */
 .about-left {
-    background-color: #6E6E6E;
     opacity: 60%;
     position: absolute;
-    margin: 5px 0px;
-    width: 958px;
-    height: calc(100% - 20px);
+    width: 100%;
+    height: 85%;
     z-index: 1;
-    top: 0;
-    left: -958px;
+    top: -85%;
+    left: 0;
     transition-duration: 500ms;
-    border-top-right-radius: 36px;
-    border-bottom-right-radius: 36px;
+    padding-bottom: 0;
+    padding-top: 30px;
+    background-color: rgba(110,110,110,0.8);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    overflow: auto;
+    background-repeat: no-repeat;
 }
 
 .about-left h2 {
     color: #58CAF0;
-    margin-top: 150px;
-    margin-left: 100px;
-    font-size: xx-large;
-}
-
-.about-left p {
-    color: #58CAF0;
-    margin-top: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
-    font-size: larger;
     text-shadow: rgba(0,0,0,0.5);
-    font-weight: bold;
+    text-align: center;
 }
 
+.bio {
+    color: #58CAF0;
+    font-size: medium;
+    text-shadow: rgba(0,0,0,1);
+    font-weight: bold;
+    margin-top: 50px;
+    text-align: justify;
+    margin: 10px;
+}
+
+#nav-about-exit {
+    margin: 2%;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-style: none;
+    border-radius: 10px;
+    color: #58CAF0;
+    font-weight: bold;
+    padding: 10px 5px;
+    left: 35%;
+}
+
+/* -----PROJECTS SECTION----- */
 .projects-bottom {
-    background-color: #6E6E6E;
     opacity: 60%;
     position: absolute;
-    margin: 0px 5px;
-    height: 700px;
-    width: calc(100% - 20px);
+    width: 100%;
+    height: 85%;
     z-index: 1;
-    bottom: -700px;
+    top: -85%;
+    left: 0;
     transition-duration: 500ms;
-    border-top-right-radius: 36px;
-    border-top-left-radius: 36px;
+    padding-bottom: 0;
+    padding-top: 30px;
+    background-color: rgba(110,110,110,0.8);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    overflow: auto;
+    background-repeat: no-repeat;
+}
+
+.projects-container {
+    position: relative;
 }
 
 .projects-bottom h2 {
     color: #58CAF0;
-    margin-top: 150px;
-    margin-left: 100px;
+    text-shadow: rgba(0,0,0,0.5);
+    text-align: center;
+    position: relative;
 }
 
 .projects {
     display: inline-block;
-    list-style-type: none;
-}
-
-.projects li {
-    float: left;
+    margin: auto;
+    width: 100%;
+    border-style: hidden;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    padding: 0;
+    font-size: 20px;
 }
 
 .projects li a {
     display: block;
     width: 200px;
-    height: 100px;
     text-align: center;
     margin: auto;
     font-weight: bold;
     color: #58CAF0;
     font-size: x-large;
+    position: relative;
 }
 
 .projects img {
-    width: 150px;
+    width: 100%;
     margin-top: 50px;
+    position: relative;
 }
 
+/* -----CONTACT SECTION----- */
 .contact-right {
     background-color: #6E6E6E;
     opacity: 60%;
     position: absolute;
-    margin: 5px 0px;
-    width: 962px;
-    height: calc(100% - 20px);
+    margin: 25% 0 0 0;
+    width:100%;
+    height: 150%;
     z-index: 1;
     top: 0;
-    right: -962px;
+    /* top: -100%; */
     transition-duration: 500ms;
-    border-top-left-radius: 36px;
-    border-bottom-left-radius: 36px;
+    padding-bottom: 0;
+    padding-top: 30px;
+    background-color: rgba(110,110,110,0.8);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 
 .contact-right h2 {
     color: #58CAF0;
-    margin-top: 150px;
-    margin-left: 100px;
+    text-shadow: rgba(0,0,0,0.5);
+    text-align: center;
 }
 
-.contact-right form {
-    margin-left: 100px;
-    margin-top: 20px;
-}
-.contact-right form input {
-    margin: 10px 0px;
-    width: 75%;
+
+
+
+
+
+.exit-container {
+    position: relative;
+    float: initial;
+    padding: 0;
+    margin: auto;
+
+    display: block;
+    width: 13%;
+    margin-top: 5%;
+    top: -90%;
 }
 
-.buttons {
-    position: fixed;
+.nav-projects-button {
+    margin: 2%;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-style: none;
+    border-radius: 10px;
+    color: #58CAF0;
+    font-weight: bold;
+    padding: 10px 5px;
+}
+
+
+
+/* buttons after breakpoint */
+/* .buttons {
+    position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
@@ -207,4 +290,4 @@ body {
     color: #58CAF0;
     font-weight: bold;
     font-size: larger;
-}
+} */

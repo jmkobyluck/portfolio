@@ -1,96 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Johnny Kobyluck Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
-        crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-        crossorigin="anonymous"></script>    
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <link href='style.css' rel='stylesheet' type='text/css'>
     <script src='js/nav-windows.js'></script>
 </head>
-<body id="bg">
-    <div class="main" id="main">
-        <div class="buttons">
-            <button role='button' onclick="OnShowPart(event, 'left')" class='button' id='nav-left'>About</button>
-            <button role='button' onclick="OnShowPart(event, 'bottom')" class='button' id='nav-bottom'>Projects</button>
-            <button role='button' onclick="OnShowPart(event, 'right')" class='button' id='nav-right'>Contact</button>
-        </div>
-        
-        <div class="home">
-            <h1 class="name">Johnny Kobyluck</h1>
-            <div class="photo-container">
-                <img width="100%" height="100%" class="profile" src="assets/me.jpg" alt="Profile Photo of Johnny">
-            </div>            
-            <ul class="desc">
-                <li>Web Developer</li>
-                <li>Husband</li>
-                <li>Father</li>
-                <li>Son</li>
-                <li>Friend</li>
-            </ul>
-    
-        </div>    
-    </div>
 
-
-    </div>
-        <div id="left" class="about-left">
-            <h2>Johnny Kobyluck</h2>
-            <p class="bio">My name is Johnny Kobyluck and I am an aspiring Web Developer. In my early life I was always interested in technology. I have always been the go-to person in my family for any technology questions and have maintained that status since. I am just now working towards my dream career to support my family in the best way I can. Being able to get into a business environment where I am creating a product that improves a person’s or business’s experience would be an ideal situation for me and I can’t wait to really delve into the world of coding!</p>
-
-            <div class="exit-container">
-                <button role='exit-button' onclick="OnShowPart(event, 'left')" id='nav-about-exit'>Home</button>
-            </div>
-        </div>
-        <div id="bottom" class="projects-bottom"> -->
-            <div class="projects-container">
-                <h2>Previous Projects</h2>
-                <ul class="projects">
-                    <li>
-                        <a href="https://jmkobyluck.github.io/bioSite/" target="_blank">
-                            <img src="assets/graphic-img-1.jpg">bioSite</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/jmkobyluck/web-231" target="_blank">
-                            <img src="assets/graphic-img-2.jpg">Web-231 Repo</a>
-                    </li>
-                    <li>
-                        <a href="https://xd.adobe.com/view/07b56a45-4c64-4134-6ca9-a6aa99679032-7184/?fullscreen&hints=off" target="_blank">
-                        <img src="assets/Home.png">Portfolio Prototype</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/jmkobyluck/web-330" target="_blank">
-                            <img src="assets/graphic-img-3.jpg">Web-330 Repo</a>
-                    </li>
-                </ul>
-
-                <div class="exit-container">
-                    <button role='button' onclick="OnShowPart(event, 'bottom')" class='exit-button' id='nav-projects-exit'>Home</button>
-                </div>
-            </div>
-        </div>
-        <div id="right" class="contact-right" style="visibility: hidden;">
-            <h2 id="form-title">Professional Inquiries</h2>
-            <form action="#">
-                <input type="text" id="form-email" name="email" placeholder="Email"><br>
-                <input type="text" id="form-name" name="name" placeholder="Name"><br>
-                <input type="text" id="form-subject" name="subject" placeholder="Subject"><br>
-                <textarea type="text" id="form-message" name="message" placeholder="Message" cols="89" rows="4"></textarea><br>
-                <input type="submit" id="form-submit" value="Submit">
-            </form>
-
-            <div class="exit-container">
-                <button role='button' onclick="OnShowPart(event, 'right')" class='exit-button' id='nav-contact-exit'>X</button>
-            </div>
+<body>
+    <div id="main" class="home">
+        <h1 class="name">Johnny Kobyluck</h1>
+        <ul class="desc">
+            <li>Web Developer</li>
+            <li>Husband</li>
+            <li>Father</li>
+            <li>Son</li>
+            <li>Friend</li>
+        </ul>
+        <div class="photo-container">
+            <img width="100%" height="100%" class="profile" src="assets/me.jpg" alt="Profile Photo of Johnny"
+                class="img-rounded">
         </div>
     </div>
+
+
+    <div class="buttons">
+        <button role='button' onclick="OnShowPart(event, 'left')" class='button' id='nav-left'>About</button>
+        <button role='button' onclick="OnShowPart(event, 'bottom')" class='button' id='nav-bottom'>Projects</button>
+        <button role='button' onclick="OnShowPart(event, 'right')" class='button' id='nav-right'>Contact</button>
+    </div>
+    <div id="left" class="about-left">
+        <h2>Johnny Kobyluck</h2>
+        <p class="bio">My name is Johnny Kobyluck and I am an aspiring Web Developer. In my early life I was always
+            interested in technology. Although we didn’t have the same technology then as my kids are growing up with
+            now, I sure made it a point to learn everything I could about the technology that was available then. Being
+            that I learned so much about computers, I was always the go-to person in my family for any technology
+            questions and have maintained that status since. Nowadays, I have a Wife, a 7-year-old girl, and 3-year old
+            boy, and a 1-year old boy (nephew). I have been working as a retail Manager for years and am just now
+            working towards my dream career to support my family in the best way I can. Being able to get into a
+            business environment where I am creating a product that improves a person’s or business’s experience would
+            be an ideal situation for me and I can’t wait to really delve into the world of coding!</p>
+    </div>
+    <div id="bottom" class="projects-bottom">
+        <h2>Previous Projects</h2>
+        <ul class="projects">
+            <li>
+                <a href="https://jmkobyluck.github.io/bioSite/" target="_blank">
+                    <img src="assets/graphic-img-1.jpg">bioSite</a>
+            </li>
+            <li>
+                <a href="https://github.com/jmkobyluck/web-231" target="_blank">
+                    <img src="assets/graphic-img-2.jpg">Web-231 Repo</a>
+            </li>
+            <li>
+                <a href="https://xd.adobe.com/view/07b56a45-4c64-4134-6ca9-a6aa99679032-7184/?fullscreen&hints=off"
+                    target="_blank">
+                    <img src="assets/Home.png">Portfolio Prototype</a>
+            </li>
+            <li>
+                <a href="https://github.com/jmkobyluck/web-330" target="_blank">
+                    <img src="assets/graphic-img-3.jpg">Web-330 Repo</a>
+            </li>
+            <li>
+                <a href="https://github.com/jmkobyluck/GitHappens" target="_blank">
+                    <img src="assets/javascript-542e10ea6e.png">Web-330 Repo</a>
+            </li>
+        </ul>
+    </div>
+    <div id="right" class="contact-right">
+        <h2 id="form-title">Professional Inquiries</h2>
+        <form action="#">
+            <input type="text" id="form-email" name="email" placeholder="Email"><br>
+            <input type="text" id="form-name" name="name" placeholder="Name"><br>
+            <input type="text" id="form-subject" name="subject" placeholder="Subject"><br>
+            <textarea type="text" id="form-message" name="message" placeholder="Message" cols="89"
+                rows="4"></textarea><br>
+            <input type="submit" id="form-submit" value="Submit">
+        </form>
+    </div>
+
 </body>
+
 </html>

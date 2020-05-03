@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Johnny Kobyluck Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link href='style.css' rel='stylesheet' type='text/css'>
     <script src='js/nav-windows.js'></script>
 </head>
@@ -51,30 +52,54 @@
             be an ideal situation for me and I can’t wait to really delve into the world of coding!</p>
     </div>
     <div id="bottom" class="projects-bottom">
-        <h2>Previous Projects</h2>
-        <ul class="projects">
-            <li>
-                <a href="https://jmkobyluck.github.io/bioSite/" target="_blank">
-                    <img src="assets/graphic-img-1.jpg">bioSite</a>
+        <ul class="nav nav-tabs">
+            <li class="active">
+                <a href="#projects" data-toggle="tab">
+                    <h2>Previous Projects</h2>
+                </a>
             </li>
             <li>
-                <a href="https://github.com/jmkobyluck/web-231" target="_blank">
-                    <img src="assets/graphic-img-2.jpg">Web-231 Repo</a>
-            </li>
-            <li>
-                <a href="https://xd.adobe.com/view/07b56a45-4c64-4134-6ca9-a6aa99679032-7184/?fullscreen&hints=off"
-                    target="_blank">
-                    <img src="assets/Home.png">Portfolio Prototype</a>
-            </li>
-            <li>
-                <a href="https://github.com/jmkobyluck/web-330" target="_blank">
-                    <img src="assets/graphic-img-3.jpg">Web-330 Repo</a>
-            </li>
-            <li>
-                <a href="https://github.com/jmkobyluck/GitHappens" target="_blank">
-                    <img src="assets/javascript-542e10ea6e.png">Web-330 Repo</a>
+                <a href="#diagrams" data-toggle="tab">
+                    <h2>Diagrams</h2>
+                </a>
             </li>
         </ul>
+        <div class="tab-content">
+            <div id="projects" class="tab-pane fade in active">
+                <ul class="projects">
+                    <li>
+                        <a href="https://jmkobyluck.github.io/bioSite/" target="_blank">
+                            <img src="assets/graphic-img-1.jpg">bioSite</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/jmkobyluck/web-231" target="_blank">
+                            <img src="assets/graphic-img-2.jpg">Web-231 Repo</a>
+                    </li>
+                    <li>
+                        <a href="https://xd.adobe.com/view/07b56a45-4c64-4134-6ca9-a6aa99679032-7184/?fullscreen&hints=off"
+                            target="_blank">
+                            <img src="assets/Home.png">Portfolio Prototype</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/jmkobyluck/web-330" target="_blank">
+                            <img src="assets/graphic-img-3.jpg">Web-330 Repo</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/jmkobyluck/GitHappens" target="_blank">
+                            <img src="assets/javascript-542e10ea6e.png">Web-330 Repo</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="diagrams" class="tab-pane fade">
+                <ul class="projects">
+                    <li>
+                        <a href="./web-335/kobyluck-diagrams.html" target="_blank">
+                            <img src="./nosql-datadiagrams/uml-assignment-1.4.jpg" alt="">Images
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
     <div id="right" class="contact-right">
         <h2 id="form-title">Professional Inquiries</h2>

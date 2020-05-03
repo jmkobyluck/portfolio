@@ -133,6 +133,10 @@ body {
     margin-left: 100px;
 }
 
+.projects-bottom h2 {
+    margin: 10px 75px;
+}
+
 .projects {
     display: inline-block;
     list-style-type: none;

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagrams</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href='/style.css' rel='stylesheet' type='text/css'>
+    <style>
+        .gallery:hover {
+            border: 1px solid #777;
+        }
+
+
+        .desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .item img {
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="imageCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#imageCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#imageCarousel" data-slide-to="1"></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="item gallery active">
+                <a href="../nosql-datadiagrams/nosql-assignment-1.4.jpg" target="_blank">
+                    <img src="../nosql-datadiagrams/nosql-assignment-1.4.jpg" alt="">
+                </a>
+                <div class="desc">Add a description of the image here</div>
+            </div>
+
+            <div class="item">
+                <a href="../nosql-datadiagrams/uml-assignment-1.4.jpg" target="_blank">
+                    <img src="../nosql-datadiagrams/uml-assignment-1.4.jpg" alt="">
+                </a>
+                <div class="desc">Add a description of the image here</div>
+            </div>
+        </div>
+
+        <a href="#imageCarousel" class="left carousel-control" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a href="#imageCarousel" class="right carousel-control" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+</body>
+
+</html>

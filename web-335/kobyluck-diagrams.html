@@ -33,8 +33,10 @@
             overflow: hidden;
         }
 
+
         .myCar {
             height: auto;
+            max-height: 700px;
         }
 
         .desc {
@@ -46,6 +48,8 @@
 
         .item img {
             margin: auto;
+            max-height: 700px;
+            min-height: 700px;
         }
 
         .carousel-control.left {
@@ -66,6 +70,8 @@
             <ol class="carousel-indicators">
                 <li data-target="#imageCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#imageCarousel" data-slide-to="1"></li>
+                <li data-target="#imageCarousel" data-slide-to="2"></li>
+                <li data-target="#imageCarousel" data-slide-to="3"></li>
             </ol>
 
             <div class="carousel-inner">
@@ -81,6 +87,19 @@
                         <img src="../nosql-datadiagrams/uml-assignment-1.4.jpg" alt="">
                     </a>
                     <div class="desc">Relational database models of relationships</div>
+                </div>
+                <div class="item gallery active">
+                    <a href="../nosql-datadiagrams/kobyluck-assignment-2.2-nosql.png" target="_blank">
+                        <img src="../nosql-datadiagrams/kobyluck-assignment-2.2-nosql.png" alt="">
+                    </a>
+                    <div class="desc">NoSQL diagram for NodeShopper</div>
+                </div>
+
+                <div class="item">
+                    <a href="../nosql-datadiagrams/kobyluck-assignment-2.2-umlet.png" target="_blank">
+                        <img src="../nosql-datadiagrams/kobyluck-assignment-2.2-umlet.png" alt="">
+                    </a>
+                    <div class="desc">UMLet diagram for NodeShopper</div>
                 </div>
             </div>
 

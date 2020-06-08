@@ -1,147 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>Johnny Kobyluck Portfolio</title>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link href='style.css' rel='stylesheet' type='text/css'>
-    <script src='js/nav-windows.js'></script>
-</head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="js/nav-windows.js"></script>
+  </head>
 
-<body>
+  <body>
     <div id="main" class="home">
-        <h1 class="name">Johnny Kobyluck</h1>
-        <ul class="desc">
-            <li>Web Developer</li>
-            <li>Husband</li>
-            <li>Father</li>
-            <li>Son</li>
-            <li>Friend</li>
-        </ul>
-        <div class="photo-container">
-            <img width="100%" height="100%" class="profile" src="assets/me.jpg" alt="Profile Photo of Johnny"
-                class="img-rounded">
-        </div>
+      <h1 class="name">Johnny Kobyluck</h1>
+      <ul class="desc">
+        <li>Web Developer</li>
+        <li>Husband</li>
+        <li>Father</li>
+        <li>Son</li>
+        <li>Friend</li>
+      </ul>
+      <div class="photo-container">
+        <img
+          width="100%"
+          height="100%"
+          class="profile"
+          src="assets/me.jpg"
+          alt="Profile Photo of Johnny"
+          class="img-rounded"
+        />
+      </div>
     </div>
-
 
     <div class="buttons">
-        <button role='button' onclick="OnShowPart(event, 'left')" class='button' id='nav-left'>About</button>
-        <button role='button' onclick="OnShowPart(event, 'bottom')" class='button' id='nav-bottom'>Projects</button>
-        <button role='button' onclick="OnShowPart(event, 'right')" class='button' id='nav-right'>Contact</button>
+      <button
+        role="button"
+        onclick="OnShowPart(event, 'left')"
+        class="button"
+        id="nav-left"
+      >
+        About
+      </button>
+      <button
+        role="button"
+        onclick="OnShowPart(event, 'bottom')"
+        class="button"
+        id="nav-bottom"
+      >
+        Projects
+      </button>
+      <button
+        role="button"
+        onclick="OnShowPart(event, 'right')"
+        class="button"
+        id="nav-right"
+      >
+        Contact
+      </button>
     </div>
     <div id="left" class="about-left">
-        <h2>Johnny Kobyluck</h2>
-        <p class="bio">My name is Johnny Kobyluck and I am an aspiring Web Developer. In my early life I was always
-            interested in technology. Although we didn’t have the same technology then as my kids are growing up with
-            now, I sure made it a point to learn everything I could about the technology that was available then. Being
-            that I learned so much about computers, I was always the go-to person in my family for any technology
-            questions and have maintained that status since. Nowadays, I have a Wife, a 7-year-old girl, and 3-year old
-            boy, and a 1-year old boy (nephew). I have been working as a retail Manager for years and am just now
-            working towards my dream career to support my family in the best way I can. Being able to get into a
-            business environment where I am creating a product that improves a person’s or business’s experience would
-            be an ideal situation for me and I can’t wait to really delve into the world of coding!</p>
+      <h2>Johnny Kobyluck</h2>
+      <p class="bio">
+        My name is Johnny Kobyluck and I am an aspiring Web Developer. In my
+        early life I was always interested in technology. Although we didn’t
+        have the same technology then as my kids are growing up with now, I sure
+        made it a point to learn everything I could about the technology that
+        was available then. Being that I learned so much about computers, I was
+        always the go-to person in my family for any technology questions and
+        have maintained that status since. Nowadays, I have a Wife, a 7-year-old
+        girl, and 3-year old boy, and a 1-year old boy (nephew). I have been
+        working as a retail Manager for years and am just now working towards my
+        dream career to support my family in the best way I can. Being able to
+        get into a business environment where I am creating a product that
+        improves a person’s or business’s experience would be an ideal situation
+        for me and I can’t wait to really delve into the world of coding!
+      </p>
     </div>
     <div id="bottom" class="projects-bottom">
-        <ul class="nav nav-tabs">
-            <li class="active">
-                <a href="#projects" data-toggle="tab">
-                    <h2>Previous Projects</h2>
-                </a>
+      <ul class="nav nav-tabs">
+        <li class="active">
+          <a href="#projects" data-toggle="tab">
+            <h2>Previous Projects</h2>
+          </a>
+        </li>
+        <li>
+          <a href="#images" data-toggle="tab">
+            <h2>Images</h2>
+          </a>
+        </li>
+        <li>
+          <a href="#presentations" data-toggle="tab">
+            <h2>Presentations</h2>
+          </a>
+        </li>
+      </ul>
+      <div class="tab-content">
+        <div id="projects" class="tab-pane fade in active">
+          <ul class="projects">
+            <li>
+              <a href="https://jmkobyluck.github.io/bioSite/" target="_blank">
+                <img src="assets/graphic-img-1.jpg" />bioSite</a
+              >
             </li>
             <li>
-                <a href="#images" data-toggle="tab">
-                    <h2>Images</h2>
-                </a>
+              <a href="https://github.com/jmkobyluck/web-231" target="_blank">
+                <img src="assets/graphic-img-2.jpg" />Web-231 Repo</a
+              >
             </li>
             <li>
-                <a href="#presentations" data-toggle="tab">
-                    <h2>Presentations</h2>
-                </a>
+              <a
+                href="https://xd.adobe.com/view/07b56a45-4c64-4134-6ca9-a6aa99679032-7184/?fullscreen&hints=off"
+                target="_blank"
+              >
+                <img src="assets/Home.png" />Portfolio Prototype</a
+              >
             </li>
-        </ul>
-        <div class="tab-content">
-            <div id="projects" class="tab-pane fade in active">
-                <ul class="projects">
-                    <li>
-                        <a href="https://jmkobyluck.github.io/bioSite/" target="_blank">
-                            <img src="assets/graphic-img-1.jpg">bioSite</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/jmkobyluck/web-231" target="_blank">
-                            <img src="assets/graphic-img-2.jpg">Web-231 Repo</a>
-                    </li>
-                    <li>
-                        <a href="https://xd.adobe.com/view/07b56a45-4c64-4134-6ca9-a6aa99679032-7184/?fullscreen&hints=off"
-                            target="_blank">
-                            <img src="assets/Home.png">Portfolio Prototype</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/jmkobyluck/web-330" target="_blank">
-                            <img src="assets/graphic-img-3.jpg">Web-330 Repo</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/jmkobyluck/GitHappens" target="_blank">
-                            <img src="assets/javascript-542e10ea6e.png">Web-330 Repo</a>
-                    </li>
-                </ul>
-            </div>
-            <div id="images" class="tab-pane fade">
-                <ul class="projects">
-                    <li>
-                        <a href="./web-335/kobyluck-diagrams.html" target="_blank">
-                            <img src="./nosql-datadiagrams/uml-assignment-1.4.jpg" alt="">Images
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div id="presentations" class="tab-pane fade">
-                <ul class="projects">
-                    <li>
-                        <a href="./web-420/kobyluck-rest.html" target="_blank">
-                            <img src="./assets/rest-api.jpg" alt="">REST
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./web-420/kobyluck-restful-apis.html" target="_blank">
-                            <img src="./assets/restful-api.png" alt="">RESTful APIs
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./web-420/kobyluck-soap-apis.html" target="_blank">
-                            <img src="./assets/soap-cloud-gear-thumbnail.jpg" alt="">SOAP
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./web-420/kobyluck-json-apis.html" target="_blank">
-                            <img src="./assets/json-api.jpg" alt="">JSON APIs
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            <li>
+              <a href="https://github.com/jmkobyluck/web-330" target="_blank">
+                <img src="assets/graphic-img-3.jpg" />Web-330 Repo</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/jmkobyluck/GitHappens"
+                target="_blank"
+              >
+                <img src="assets/javascript-542e10ea6e.png" />Web-330 Repo</a
+              >
+            </li>
+          </ul>
         </div>
+        <div id="images" class="tab-pane fade">
+          <ul class="projects">
+            <li>
+              <a href="./web-335/kobyluck-diagrams.html" target="_blank">
+                <img
+                  src="./nosql-datadiagrams/uml-assignment-1.4.jpg"
+                  alt=""
+                />Images
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div id="presentations" class="tab-pane fade">
+          <ul class="projects">
+            <li>
+              <a href="./web-420/kobyluck-rest.html" target="_blank">
+                <img src="./assets/rest-api.jpg" alt="" />REST
+              </a>
+            </li>
+            <li>
+              <a href="./web-420/kobyluck-restful-apis.html" target="_blank">
+                <img src="./assets/restful-api.png" alt="" />RESTful APIs
+              </a>
+            </li>
+            <li>
+              <a href="./web-420/kobyluck-soap-apis.html" target="_blank">
+                <img src="./assets/soap-cloud-gear-thumbnail.jpg" alt="" />SOAP
+              </a>
+            </li>
+            <li>
+              <a href="./web-420/kobyluck-json-apis.html" target="_blank">
+                <img src="./assets/json-api.jpg" alt="" />JSON APIs
+              </a>
+            </li>
+            <li>
+              <a
+                href="./restful-api-presentations/kobyluck-presentation-6.2.pptx"
+                target="_blank"
+              >
+                <img src="./assets/json-api.jpg" alt="" />Hypermedia Design
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
     <div id="right" class="contact-right">
-        <h2 id="form-title">Professional Inquiries</h2>
-        <form action="#">
-            <input type="text" id="form-email" name="email" placeholder="Email"><br>
-            <input type="text" id="form-name" name="name" placeholder="Name"><br>
-            <input type="text" id="form-subject" name="subject" placeholder="Subject"><br>
-            <textarea type="text" id="form-message" name="message" placeholder="Message" cols="89"
-                rows="4"></textarea><br>
-            <input type="submit" id="form-submit" value="Submit">
-        </form>
+      <h2 id="form-title">Professional Inquiries</h2>
+      <form action="#">
+        <input
+          type="text"
+          id="form-email"
+          name="email"
+          placeholder="Email"
+        /><br />
+        <input
+          type="text"
+          id="form-name"
+          name="name"
+          placeholder="Name"
+        /><br />
+        <input
+          type="text"
+          id="form-subject"
+          name="subject"
+          placeholder="Subject"
+        /><br />
+        <textarea
+          type="text"
+          id="form-message"
+          name="message"
+          placeholder="Message"
+          cols="89"
+          rows="4"
+        ></textarea
+        ><br />
+        <input type="submit" id="form-submit" value="Submit" />
+      </form>
     </div>
-
-</body>
-
+  </body>
 </html>

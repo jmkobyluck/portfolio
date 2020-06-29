@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentations</title>
+
+    <link href='../style.css' rel='stylesheet' type='text/css'>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .videodiv {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            background-image: url(../assets/web-bg.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition-duration: 500ms;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="videodiv">
+        <div class="card">
+            <div class="card-body">
+                <video controls autoplay reload="none" style="width:1000px;">
+                    <source src="../restful-api-presentations/kobyluck-presentation-9.2.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

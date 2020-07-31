@@ -112,6 +112,15 @@ body {
   font-weight: bold;
 }
 
+.about-left button {
+  float: right;
+  margin-top: 1.2%;
+  margin-right: 2%;
+  border: none;
+  color: #58caf0;
+  font-size: larger;
+}
+
 .projects-bottom {
   background-color: #6e6e6e;
   opacity: 60%;
@@ -134,6 +143,15 @@ body {
 
 .projects-bottom h2 {
   margin: 10px 75px;
+}
+
+.projects-bottom button {
+  float: right;
+  margin-top: 1.2%;
+  margin-right: 2%;
+  border: none;
+  color: #58caf0;
+  font-size: larger;
 }
 
 .projects {
@@ -176,6 +194,15 @@ body {
   transition-duration: 500ms;
   border-top-left-radius: 36px;
   border-bottom-left-radius: 36px;
+}
+
+.contact-right button {
+  float: left;
+  margin-top: 1.2%;
+  margin-left: 2%;
+  border: none;
+  color: #58caf0;
+  font-size: larger;
 }
 
 .contact-right h2 {

@@ -148,10 +148,10 @@ body {
 
 .projects li a {
   display: block;
-  width: 200px;
+  width: 170px;
   height: 100px;
   text-align: center;
-  margin: auto;
+  margin: auto 10px;
   font-weight: bold;
   color: #58caf0;
   font-size: large;

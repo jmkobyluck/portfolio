@@ -126,10 +126,10 @@ body {
   opacity: 60%;
   position: absolute;
   margin: 0px 5px;
-  height: 700px;
+  height: 800px;
   width: calc(100% - 20px);
   z-index: 1;
-  bottom: -700px;
+  bottom: -800px;
   transition-duration: 500ms;
   border-top-right-radius: 36px;
   border-top-left-radius: 36px;
